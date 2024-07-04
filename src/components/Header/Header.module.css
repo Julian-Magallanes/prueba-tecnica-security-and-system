@@ -1,0 +1,18 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F1F;
+    border-radius: 0px 0px 50px 50px ;
+    height: 10rem;
+    width: 100%;
+}
+.headerContainer button{
+    color: #FDFDFD;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    margin: 1rem;
+}

@@ -1,0 +1,87 @@
+.interestsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16rem;
+}
+.interestsImg{
+    border-radius: 50%;
+    position: absolute;
+    bottom:  -34rem;
+    z-index: 2;
+}
+.interestsContainer h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem;
+    margin: 5rem 0 5rem 0;
+}
+.interestsContainer ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 24rem;
+    
+}
+.interestsContainer ul li p{
+    width: 350px;
+    height: 78px;
+    border-radius: 45px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FDFDFD;
+    position: absolute;
+    z-index: 2;
+}
+.interestsButtons{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 40rem;
+    z-index: 3;
+}
+.interestsButtons2{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 52rem;
+    z-index: 1;
+}
+.interestsButtons3{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 64rem;
+    z-index: 1;
+}
+.interestsButtons4{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 64rem;
+    z-index: 3;
+}
+.interestsButtons5{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 60rem;
+    z-index: 2,
+}
+.buttonPrimary{
+    background-color: #5A0ADC;
+}
+.buttonSecondary{
+    background-color: #1F1F1F;
+}
+
+.buttonTertiary{
+    background-color: #16DACE;
+}

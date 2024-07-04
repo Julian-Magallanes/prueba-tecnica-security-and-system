@@ -1,0 +1,27 @@
+.aboutMeContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 7rem;
+}
+.aboutMeImg{
+    border-radius: 50%;
+    border: #1F1F1F solid 4px;
+    
+}
+.aboutMeContainer h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem;
+}
+.aboutMeContainer p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 68%;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 2rem;
+}
