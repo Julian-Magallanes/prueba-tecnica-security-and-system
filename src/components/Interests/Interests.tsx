@@ -6,6 +6,8 @@ const Interests: React.FC = (): React.ReactElement => {
     return (
         <div className={styles.interestsContainer}>
             <h1>Mis Intereses</h1>
+            <div className={styles.interestsContainerContent}>
+            <Image src={banner} alt="foto de perfil" width={410} height={410} className={styles.interestsImg}/>
             <ul>
                 <li className={styles.interestsButtons}>
                     <p className={styles.buttonPrimary}>1. Programación</p>
@@ -22,8 +24,9 @@ const Interests: React.FC = (): React.ReactElement => {
                 <li className={styles.interestsButtons5}>
                     <p className={styles.buttonSecondary}>5. Video Juegos</p>
                 </li>
+            
             </ul>
-            <Image src={banner} alt="foto de perfil" width={410} height={410} className={styles.interestsImg}/>
+            </div>
         </div>
     )
 }

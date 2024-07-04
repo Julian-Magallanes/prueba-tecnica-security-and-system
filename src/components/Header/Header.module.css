@@ -1,12 +1,13 @@
 .headerContainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #1F1F1F;
     border-radius: 0px 0px 50px 50px ;
     height: 10rem;
     width: 100%;
 }
+
 .headerContainer button{
     color: #FDFDFD;
     background-color: transparent;
@@ -15,4 +16,120 @@
     font-weight: 400;
     padding: 1rem;
     margin: 1rem;
+}
+.NavbarMenu{
+    height: 100%;
+}
+.NavbarDropdown {
+    list-style: none;
+    position: relative;
+    display: none;
+    text-align: end;
+    font-size: 24px;
+    
+}
+
+.NavbarDropdown.Visible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #1F1F1F;
+    height: 260px;
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.ToggleIcon{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    margin-right: 20px;
+    
+}
+.NavbarDropdown li {
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+    color: #FDFDFD;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+.NavbarDropdown li :hover ul {
+    display: block;
+    
+}
+/*Barras*/
+.NavbarMenuIcon1{
+    margin-left: 10px;
+    margin-bottom: 8px;
+    width: 40px;
+    height: 5px;
+    background-color:#FDFDFD ;
+    transition: 0.2s;
+    z-index: 2;
+    border-radius: 12px;
+}
+.NavbarMenuIcon1.Animation {
+    transform: rotateZ(35deg);
+    top: 7px;
+    position: relative;
+}
+
+.NavbarMenuIcon2{
+    margin-left: 10px;
+    margin-bottom: 8px;
+    width: 40px;
+    height: 5px;
+    background-color:#FDFDFD ;
+    z-index: 2;
+    border-radius: 12px;
+    
+}
+.NavbarMenuIcon2.Animation {
+    display: none;
+}
+.NavbarMenuIcon3{
+    margin-left: 10px;
+    margin-bottom: 8px;
+    width: 40px;
+    height: 5px;
+    background-color:#FDFDFD ;
+    transition: 0.2s;
+    z-index: 2;
+    border-radius: 12px;
+}
+.spaceMobile{
+    width: 70px;
+    height: 5px;
+
+}
+.NavbarMenuIcon3.Animation {
+    top: -6px;
+    position: relative;
+    transform: rotateZ(-35deg)
+}
+@media (max-width: 640px) {
+    .buttonHidden{
+        display: none;
+    }
+    .buttonMobile{
+        width: 100%;
+    }
+    .headerButtons{
+        display: flex;
+        justify-items: center;
+    }
+}
+@media (min-width: 640px) {
+    .spaceMobile{
+        display: none;
+    }
+    .NavbarMenu{
+        display: none;
+    }
+
 }
