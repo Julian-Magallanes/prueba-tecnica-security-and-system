@@ -5,15 +5,16 @@ import ValidateForms from '../../middleware/ValidateForms'
 import ErrorMessage from './ErrorMessage';
 import { FormErrors, FormData } from './ContactForm.type';
 import Swal from 'sweetalert2'
-const initialState: FormData = {
+
+
+const ContactForm: React.FC = (): React.ReactElement => {
+    const initialState: FormData = {
     name: "",
     lastname: "",
     affair: "",
     description: "",
     email: "",
 };
-
-const ContactForm: React.FC = (): React.ReactElement => {
     const [errors, setErrors] = useState<FormErrors>({});
     const [formsData, setFormsData] = useState<FormData>(initialState);
 

@@ -8,19 +8,43 @@ const Header: React.FC = (): React.ReactElement => {
         setDropdownVisible(!dropdownVisible);
         setMenuAnimation(!menuAnimation);
     };
+    const scrollDownInterests = () => {
+        window.scrollBy({
+          top: window.innerHeight, 
+          behavior: 'smooth', 
+        });
+      };
+    const scrollDownContact = () => {
+        window.scrollBy({
+          top: window.innerHeight*2, 
+          behavior: 'smooth', 
+        });
+    }; 
+    const scrollDownInterestsMobile = () => {
+        window.scrollBy({
+          top: window.innerHeight, 
+          behavior: 'smooth', 
+        });
+      };
+    const scrollDownContactMobile = () => {
+        window.scrollBy({
+          top: window.innerHeight*1.75, 
+          behavior: 'smooth', 
+        });
+    }; 
     return (
         <div className={styles.headerContainer}>
             <div className={styles.spaceMobile}>
             </div>
             <div className={styles.headerButtons}>
                 <button className={styles.buttonMobile}>
-                    Sobre Mí
+                    <p style={{borderBottom: '2px solid #FDFDFD' }}>Sobre Mí</p>
                 </button>
-                <button className={styles.buttonHidden}>
+                <button className={styles.buttonHidden} onClick={scrollDownInterests}>
                     Mis Intereses
                 </button>
             </div>
-            <button className={styles.buttonHidden}>
+            <button className={styles.buttonHidden} onClick={scrollDownContact}>
                 Contacto
             </button>
             <div className={styles.NavbarMenu}>
@@ -30,13 +54,13 @@ const Header: React.FC = (): React.ReactElement => {
                     <div className={`${styles.NavbarMenuIcon3} ${menuAnimation ? styles.Animation : ''}`}></div>
                 </div>
                 <ul className={`${styles.NavbarDropdown} ${dropdownVisible ? styles.Visible : ''}`}>
-                    <li>
-                        Sobre Mí
+                    <li >
+                        <p style={{borderBottom: '2px solid #FDFDFD' }}>Sobre Mí</p>
                     </li>
-                    <li>
+                    <li onClick={scrollDownInterestsMobile}>
                         Mis Intereses
                     </li>
-                    <li>
+                    <li onClick={scrollDownContactMobile}>
                         Contacto
                     </li>
                 </ul>
